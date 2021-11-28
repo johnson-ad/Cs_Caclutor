@@ -58,12 +58,19 @@ namespace Cs_Caclutor
                         break;
                 }
                 Console.WriteLine("\nVoulez-vous continuer ? [ Y = oui, N = no ]: ");
+
             } while (Console.ReadLine().ToUpper() == "Y");
 
             Console.WriteLine("\nBaye 😁");
             Console.ReadKey();
         }
 
+        /// <summary>
+        /// function pour effectuer des calcules avec la calculatrice
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         public static double addNum(double a, double b) => a + b; 
         public static double subNum(double a, double b) => a - b;         
         public static double prodNum(double a, double b) => a * b;     
