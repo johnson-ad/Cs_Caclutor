@@ -13,6 +13,19 @@ namespace Cs_Caclutor
         {
             String respon;
           
+        /// <summary>
+        /// function pour effectuer des calcules avec la calculatrice
+        /// </summary>
+        /// <param name="a">double</param>
+        /// <param name="b">double</param>
+        /// <returns></returns>
+        public static double addNum(double a, double b) => a + b; 
+        public static double subNum(double a, double b) => a - b;         
+        public static double prodNum(double a, double b) => a * b;     
+        public static double divNum(double a, double b) => a / b;
+        public static double modNum(double a, double b) => a % b;
+        public static double powNum(double a) => a * a;      
+
             Console.Title = "👨🏽‍💻 Exo Calculator in C# 😁";
             Console.WriteLine("\t\t\tConsole Calulator in C#\r");
             Console.WriteLine("\t\t\t-----------------------\r");        
@@ -64,19 +77,6 @@ namespace Cs_Caclutor
             Console.WriteLine("\nBaye 😁");
             Console.ReadKey();
         }
-
-        /// <summary>
-        /// function pour effectuer des calcules avec la calculatrice
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        public static double addNum(double a, double b) => a + b; 
-        public static double subNum(double a, double b) => a - b;         
-        public static double prodNum(double a, double b) => a * b;     
-        public static double divNum(double a, double b) => a / b;
-        public static double modNum(double a, double b) => a % b;
-        public static double powNum(double a) => a * a;      
 
     }
 }
